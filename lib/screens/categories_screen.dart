@@ -5,9 +5,7 @@ import 'package:meals_app/dummy_data.dart';
 class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title:const Text('Meals App'),),
-          body: GridView(
+    return  GridView(
             padding: EdgeInsets.all(25),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
@@ -23,7 +21,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
             )
             .toList(),
-      ),
+     
     );
   }
 }
